@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B8F3B8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="History"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <EditText
+                android:id="@+id/preMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:backgroundTint="#000000"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-smallcaps"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Quick Answer"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/tvAuto1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/autotxt1"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/tvAuto2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/autotxt2"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/tvAuto3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/autotxt3"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:id="@+id/tvAuto4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/autotxt4"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-smallcaps"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:backgroundTint="#000000"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="#000000"/>
+
+            <ImageButton
+                android:id="@+id/btnPublish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/ic_send" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

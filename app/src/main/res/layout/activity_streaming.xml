@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.project.Smart_Door_Lock.WebViewFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCD1FF"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:backgroundTint="#000000"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_vertical" />
+
+        <ImageButton
+            android:id="@+id/btnPublish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/ic_send" />
+
+
+    </LinearLayout>
+</LinearLayout>

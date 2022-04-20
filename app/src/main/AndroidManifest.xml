@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.Smart_Door_Lock">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_smart_house"
+        android:roundIcon="@drawable/ic_smart_house"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+        See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id"/>
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".TTSActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".Token" />
+        <activity android:name=".StreamingActivity" />
+        <activity android:name=".AWSFileLoaderActivity"/>
+        <activity android:name=".VisitorPictureViewActivity"/>
+        <activity android:name=".VoiceMessagePlayActivity"/>
+        <activity android:name=".HistoryActivity"/>
+
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".AdvertiserService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+    </application>
+
+
+</manifest>

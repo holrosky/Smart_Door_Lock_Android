@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Smart_Door_Lock</string>
+    <string name="ClientId">Client Id:</string>
+    <string name="Status">Status:</string>
+    <string name="Disconnected">DISCONNECTED</string>
+    <string name="Disconnect">Disconnect</string>
+    <string name="Connect">Connect</string>
+    <string name="Topicname">Topic name</string>
+    <string name="Subscribe">Subscribe</string>
+    <string name="Lastmessage">Last message:</string>
+    <string name="NA">N/A</string>
+    <string name="Topic">Topic:</string>
+    <string name="Message">Message:</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="ic_stat_ic_notification">ic_stat_ic_notification</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="toMainPage">Get started!</string>
+    <string name="doorOpen">Door</string>
+    <string name="TTS">TTS</string>
+    <string name="srien">Srien</string>
+    <string name="reboot">Reboot</string>
+    <string name="streaming">Streaming</string>
+    <string name="setting">Setting</string>
+    <string name="token">My Token</string>
+    <string name="myToken">My Token : </string>
+    <string name="tokenCopy">Copy Token</string>
+    <string name="pushSwitchOn">Push alarm ON</string>
+    <string name="pushSwitchOff">Push alarm OFF</string>
+    <string name="pushINFO">If it is off, push alarm while app is foreground will not come</string>
+    <string name="autotxt1">I am sorry, I am busy at the moment</string>
+    <string name="autotxt2">Can you leave the parcel on my neighbor?</string>
+    <string name="autotxt3">Can you wait for one second?</string>
+    <string name="autotxt4">Thank you very much.</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="settingMyToken">Check my token and copy</string>
+    <string name="settingDisconnect">Disconnect from the server</string>
+    <string name="bt_null">Error: Bluetooth object null</string>
+    <string name="BLEswitchOn">Bluetooth LE ON</string>
+    <string name="BLEswitchOff">Bluetooth LE OFF</string>
+    <string name="BLEinfo">If it is on, when you are close to the door, streaming and push system will stop</string>
+    <string name="pistatus">Raspberry Pi status</string>
+    <string name="shakeToOpenOn">Shake to Open ON</string>
+    <string name="shakeToOpenOff">Shake to Open OFF</string>
+    <string name="shakeToOpenInfo">If it is on, when you shake your phone near by door, the door will be opened</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="please_wait">Please wait</string>
+</resources>
